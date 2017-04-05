@@ -1,0 +1,102 @@
+/*=======================================
+   >>>>>>>>  GENERAL STYLES  <<<<<<<<
+========================================*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/*=======================================
+      >>>>>>>>  HEADER  <<<<<<<<
+========================================*/
+
+header {
+  background-color: #2B2B2B;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 0 0 20px;
+}
+
+.login {
+  background-image: url(../assets/user.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 15px;
+  background-position: 10px 50%;
+  color: #27A0DE;
+  text-decoration: none;
+  padding: .5em;
+  padding-bottom: 0.3em;
+  padding-left: 40px;
+  transition: all 200ms;
+}
+.login:hover {
+  color: #fff;
+  background-image: url(../assets/user-active.svg);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  color: #969696;
+  text-decoration: none;
+  padding: .5em;
+  padding-bottom: 0.3em;
+  padding-left: 40px;
+  transition: all 200ms;
+}
+.nav-item:hover {
+  color: white;
+}
+
+.shares {
+  background-image: url(../assets/nav-share.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 15px;
+  background-position: 10px 50%;
+}
+.shares:hover{
+  background-image: url(../assets/nav-share-active.svg);
+}
+
+.playlist{
+  background-image: url(../assets/list.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 15px;
+  background-position: 10px 50%;
+}
+.playlist:hover {
+  background-image: url(../assets/list-active.svg);
+}
+
+.videos {
+  background-image: url(../assets/video.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 15px;
+  background-position: 10px 50%;
+}
+.videos:hover {
+  background-image: url(../assets/video-active.svg);
+}
