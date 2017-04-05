@@ -13,7 +13,12 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  font-weight: 400;
 }
 
 /*=======================================
@@ -21,6 +26,8 @@ body {
 ========================================*/
 
 header {
+  display: flex;
+  flex-direction: column;
   background-color: #2B2B2B;
   padding: 20px;
 }
@@ -45,6 +52,7 @@ h1 {
   padding-bottom: 0.3em;
   padding-left: 40px;
   transition: all 200ms;
+  margin-bottom: 10px;
 }
 .login:hover {
   color: #fff;
@@ -63,6 +71,7 @@ nav {
   padding-bottom: 0.3em;
   padding-left: 40px;
   transition: all 200ms;
+  text-transform: uppercase;
 }
 .nav-item:hover {
   color: white;
@@ -99,4 +108,125 @@ nav {
 }
 .videos:hover {
   background-image: url(../assets/video-active.svg);
+}
+
+/*=======================================
+    >>>>>>>>  MAIN SECTION  <<<<<<<<
+========================================*/
+
+main {
+  background-color: #EFEFEF;
+  height: 100%;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;;
+  font-weight: 400;
+  color: #4B4B4B;
+}
+
+/*=======================================
+      >>>>>>>>  CARDS  <<<<<<<<
+========================================*/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, .5);
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.card-header {
+  min-height: 140px;
+  background-color: #747879;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-header-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%
+}
+
+.share-btn {
+  width: 50px;
+  height: 50px;
+  background-image: url(../assets/card-share.svg);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  transition: all 200ms;
+}
+.share-btn:hover {
+  background-image: url(../assets/card-share-active.svg);
+  cursor: pointer;
+}
+
+.views {
+  text-align: center;
+}
+
+.views-label {
+  text-transform: uppercase;
+  font-size: .7em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.views-ammount {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+
+.card-body {
+  padding: 15px;
+  color: #696969;
+}
+
+.name {
+  font-size: 1.2em;
+  margin-bottom: 3px;
+}
+
+.date {
+  color: #ACACAD;
+  font-size: .75em;
+}
+
+.url {
+  margin: 20px auto;
+  text-align: center;
+  background-color: #EFEFEF;
+  color: #989898;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: .8em;
+}
+
+.title-1 {
+  text-transform: uppercase;
+  font-size: .75em;
+  margin:20px auto 2px;
+}
+
+.playlist-name {
+
+}
+
+.title-2 {
+  text-transform: uppercase;
+  font-size: .75em;
+  margin:20px auto 2px;
+}
+
+.num-of-attachments {
+  font-size: 2em;
+  color: #48BFFC;
 }
