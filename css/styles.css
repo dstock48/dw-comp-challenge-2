@@ -16,6 +16,7 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+
 h1, h2, h3, h4, p {
   margin: 0;
   font-weight: 400;
@@ -116,7 +117,6 @@ nav {
 
 main {
   background-color: #EFEFEF;
-  height: 100%;
   padding: 20px;
 }
 
@@ -229,4 +229,36 @@ h2 {
 .num-of-attachments {
   font-size: 2em;
   color: #48BFFC;
+}
+
+/*=======================================
+       >>>>>>>>  FOOTER  <<<<<<<<
+========================================*/
+
+footer {
+  background-color: #2B2B2B;
+  color: #969696;
+  text-align: center;
+  padding: 30px;
+}
+
+footer p {
+  padding: 5px;
+}
+
+/*=======================================
+    >>>>>>>>  MEDIA QUERIES  <<<<<<<<
+========================================*/
+
+/*Over 450px width*/
+@media screen and (min-width: 450px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 0 1 280px;
+    /*margin: 20px;*/
+  }
 }
