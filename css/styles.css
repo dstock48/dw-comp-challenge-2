@@ -31,7 +31,7 @@ header {
 }
 
 .header-container {
-  max-width: 1300px;
+  max-width: 1240px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -127,8 +127,15 @@ main {
   align-items: center;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1240px;
+}
+
 h2 {
-  margin-bottom: 20px;
+  margin: 0 0 20px 10px;
   font-weight: 400;
   color: #4B4B4B;
   font-family: 'Roboto Slab', serif;
@@ -142,7 +149,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1300px;
 }
 
 .card {
@@ -151,8 +157,7 @@ h2 {
   background-color: #fff;
   box-shadow: 0 0 7px rgba(0, 0, 0, .5);
   margin-bottom: 20px;
-  width: 90%;
-  max-width: 350px;
+  /*max-width: 350px;*/
   transition: box-shadow 200ms;
 }
 
@@ -365,7 +370,7 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
   }
 
   .card {
@@ -388,5 +393,35 @@ h2 {
 
   nav {
     align-self: flex-end;
+  }
+}
+
+/*Under 1280px width*/
+@media screen and (max-width: 1280px) {
+  .main-container {
+    max-width: 930px;
+  }
+}
+
+/*Under 970px width*/
+@media screen and (max-width: 970px) {
+  .main-container {
+    max-width: 620px;
+  }
+}
+
+/*Under 660px width*/
+@media screen and (max-width: 660px) {
+  .main-container {
+    width: 100%;
+  }
+
+  .card-container {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
   }
 }
