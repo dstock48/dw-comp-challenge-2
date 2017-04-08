@@ -3,20 +3,19 @@
 ========================================*/
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-html,
-body {
+body,
+html {
   height: 100%;
   width: 100%;
   margin: 0;
   font-family: Roboto, sans-serif;
   background-color: #EFEFEF;
 }
-
 
 h1, h2, h3, h4, p {
   margin: 0;
@@ -34,6 +33,10 @@ header {
   padding: 20px;
 }
 
+header a {
+  text-decoration: none;
+}
+
 h1 {
   font-family: 'Roboto Slab', serif;
   color: #fff;
@@ -43,13 +46,12 @@ h1 {
 }
 
 .login {
-  background-image: url(../assets/user.svg);
+  background-image: url("../assets/user.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: 20px;
   background-position: 10px 50%;
   color: #C62A6A;
-  text-decoration: none;
   padding-top: 2px;
   padding-left: 40px;
   transition: all 200ms;
@@ -59,7 +61,7 @@ h1 {
 }
 .login:hover {
   color: #fff;
-  background-image: url(../assets/user-active.svg);
+  background-image: url("../assets/user-active.svg");
 }
 
 nav {
@@ -71,54 +73,43 @@ nav {
 .nav-item {
   display: inline-block;
   color: #969696;
-  text-decoration: none;
-  padding: .5em;
-  padding-bottom: 0.3em;
-  padding-left: 40px;
+  padding: 0.5em 0.5em 0.3em 40px;
   transition: all 200ms;
   text-transform: uppercase;
   margin: 10px 0;
   letter-spacing: 1px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 20px;
+  background-position: 10px 50%;
 }
-.nav-item:hover,
-.nav-item.active {
+.nav-item.active,
+.nav-item:hover {
   color: #fff;
 }
 
 .fruit-stand {
-  background-image: url(../assets/fruit-stand.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-size: 20px;
-  background-position: 10px 50%;
+  background-image: url("../assets/fruit-stand.svg");
 }
-.fruit-stand:hover,
-.fruit-stand.active {
-  background-image: url(../assets/fruit-stand-active.svg);
+.fruit-stand.active,
+.fruit-stand:hover {
+  background-image: url("../assets/fruit-stand-active.svg");
 }
 
-.assortment{
-  background-image: url(../assets/fruit-basket.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-size: 20px;
-  background-position: 10px 50%;
+.assortment {
+  background-image: url("../assets/fruit-basket.svg");
 }
-.assortment:hover,
-.assortment.active {
-  background-image: url(../assets/fruit-basket-active.svg);
+.assortment.active,
+.assortment:hover {
+  background-image: url("../assets/fruit-basket-active.svg");
 }
 
 .juice {
-  background-image: url(../assets/juice.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-size: 20px;
-  background-position: 10px 50%;
+  background-image: url("../assets/juice.svg");
 }
-.juice:hover,
-.juice.active {
-  background-image: url(../assets/juice-active.svg);
+.juice.active,
+.juice:hover {
+  background-image: url("../assets/juice-active.svg");
 }
 
 /*=======================================
@@ -133,16 +124,14 @@ main {
 }
 
 h2 {
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
   font-weight: 400;
   color: #4B4B4B;
   font-family: 'Roboto Slab', serif;
   font-size: 2em;
 }
 
-/*=======================================
-      >>>>>>>>  CARDS  <<<<<<<<
-========================================*/
+/*=============   CARDS  =============*/
 
 .card-container {
   display: flex;
@@ -156,74 +145,56 @@ h2 {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 7px rgba(0, 0, 0, .5);
   margin-bottom: 20px;
-  width: 300px;
+  width: 90%;
+  max-width: 350px;
+  transition: box-shadow 200ms;
 }
-
-#apple .share-btn {background-image: url(../assets/apple.svg);}
-#apple .card-header {background-image: url(../assets/card-backgrounds/apples-bg.jpg);}
-#apple .content-2 {color: #D13834;}
-
-#blueberries .share-btn {background-image: url(../assets/blueberries.svg);}
-#blueberries .card-header {background-image: url(../assets/card-backgrounds/blueberries-bg.jpg);}
-#blueberries .content-2 {color: #1A49C1;}
-
-#grapes .share-btn {background-image: url(../assets/grapes.svg);}
-#grapes .card-header {background-image: url(../assets/card-backgrounds/grapes-bg.jpg);}
-#grapes .content-2 {color: #6F58A8;}
-
-#pear .share-btn {background-image: url(../assets/pear.svg);}
-#pear .card-header {background-image: url(../assets/card-backgrounds/pears-bg.jpg);}
-#pear .content-2 {color: #D7CC56;}
-
-#pineapple .share-btn {background-image: url(../assets/pineapple.svg);}
-#pineapple .card-header {background-image: url(../assets/card-backgrounds/pineapples-bg.jpg);}
-#pineapple .content-2 {color: #D6A550;}
-
-#raspberry .share-btn {background-image: url(../assets/raspberry.svg);}
-#raspberry .card-header {background-image: url(../assets/card-backgrounds/raspberries-bg.jpg);}
-#raspberry .content-2 {color: #C62A6A;}
-
-#strawberry .share-btn {background-image: url(../assets/strawberry.svg);}
-#strawberry .card-header {background-image: url(../assets/card-backgrounds/strawberries-bg.jpg);}
-#strawberry .content-2 {color: #E22F37;}
-
 
 .card-header {
   min-height: 140px;
-  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/1b/b8/2a/1bb82a1ac944d573422bd2d137edbcdd.jpg);
   background-color: #5a5a5a;
   background-size: cover;
+  background-position: center;
   background-blend-mode: multiply;
   color: #fff;
   padding: 15px;
-  transition: background-color 200ms;
+  transition: background-color 200ms,
+              text-shadow 200ms;
 }
 .card-header:hover {
-  background-color: #bfbfbf;
   cursor: pointer;
+}
+.card:hover .card-header {
+  background-color: #bfbfbf;
+  text-shadow: 0 2px 1px #000;
 }
 
 .card-header-items {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%
+  width: 100%;
 }
 
-.share-btn {
-  width: 50px;
-  height: 50px;
+.fruit-icon {
+  min-width: 50px;
+  min-height: 50px;
   background-color: transparent;
+  background-repeat: no-repeat;
   border: none;
   padding: 0;
-  transition: all 200ms;
+  transition: transform 300ms,
+              filter 200ms;
 }
-.share-btn:hover {
+.card-header:hover .fruit-icon {
+  transform: scale(1.1);
   cursor: pointer;
 }
-
+.card:hover .fruit-icon {
+  filter: drop-shadow( 0px 1px 4px #000 );
+}
 
 .views {
   text-align: center;
@@ -231,7 +202,7 @@ h2 {
 
 .price-label {
   text-transform: uppercase;
-  font-size: .7em;
+  font-size: 0.7em;
   font-weight: 300;
   letter-spacing: 1px;
   text-align: right;
@@ -241,7 +212,6 @@ h2 {
   font-size: 2em;
   font-weight: 300;
 }
-
 
 .card-body {
   padding: 15px;
@@ -258,7 +228,7 @@ h2 {
 
 .date {
   color: #ACACAD;
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 .url {
@@ -268,40 +238,74 @@ h2 {
   color: #888;
   padding: 10px;
   border-radius: 5px;
-  font-size: .8em;
+  font-size: 0.8em;
   overflow-wrap: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
   border: 2px solid transparent;
   transition: border 250ms;
 }
+
 .url:hover {
-  border: 2px solid #969696;   /*<ACCENT COLOR*/
+  border: 2px solid #969696;
+  /*<ACCENT COLOR*/
   color: #595959;
   cursor: pointer;
 }
 
 .title-1 {
   text-transform: uppercase;
-  font-size: .75em;
-  margin:20px auto 2px;
+  font-size: 0.75em;
+  margin: 20px auto 2px;
 }
 
 .content-1 {
   font-weight: 300;
+  line-height: 1.3;
 }
 
 .title-2 {
   text-transform: uppercase;
-  font-size: .75em;
-  margin:20px auto 2px;
+  font-size: 0.75em;
+  margin: 20px auto 2px;
 }
 
 .content-2 {
   font-size: 2em;
-  color: #efdd00; /*<ACCENT COLOR*/
   font-weight: 300;
 }
+
+#apple .fruit-icon {background-image: url("../assets/apple.svg");}
+#apple .card-header {background-image: url("../assets/card-backgrounds/apples-bg.jpg");}
+#apple .content-2 {color: #D13834;}
+
+#banana .fruit-icon {background-image: url("../assets/banana.svg");}
+#banana .card-header {background-image: url("../assets/card-backgrounds/banana-bg.jpg");}
+#banana .content-2 {color: #FCAD2D;}
+
+#blueberries .fruit-icon {background-image: url("../assets/blueberries.svg");}
+#blueberries .card-header {background-image: url("../assets/card-backgrounds/blueberries-bg.jpg");}
+#blueberries .content-2 {color: #1A49C1;}
+
+#grapes .fruit-icon {background-image: url("../assets/grapes.svg");}
+#grapes .card-header {background-image: url("../assets/card-backgrounds/grapes-bg.jpg");}
+#grapes .content-2 {color: #6F58A8;}
+
+#pear .fruit-icon {background-image: url("../assets/pear.svg");}
+#pear .card-header {background-image: url("../assets/card-backgrounds/pears-bg.jpg");}
+#pear .content-2 {color: #D7CC56;}
+
+#pineapple .fruit-icon {background-image: url("../assets/pineapple.svg");}
+#pineapple .card-header {background-image: url("../assets/card-backgrounds/pineapples-bg.jpg");}
+#pineapple .content-2 {color: #D6A550;}
+
+#raspberry .fruit-icon {background-image: url("../assets/raspberry.svg");}
+#raspberry .card-header {background-image: url("../assets/card-backgrounds/raspberries-bg.jpg");}
+#raspberry .content-2 {color: #C62A6A;}
+
+#strawberry .fruit-icon {background-image: url("../assets/strawberry.svg");}
+#strawberry .card-header {background-image: url("../assets/card-backgrounds/strawberries-bg.jpg");}
+#strawberry .content-2 {color: #DD323D;}
 
 /*=======================================
     >>>>>>>>  MEDIA QUERIES  <<<<<<<<
@@ -357,22 +361,18 @@ h2 {
 
   .card {
     margin: 10px;
+    width: 290px;
   }
 }
-
-
-
 /*Over 750px width*/
 @media screen and (min-width: 750px) {
   header {
-    position: relative;
     flex-direction: row-reverse;
     justify-content: space-between;
-    height: 140px;
   }
 
   h1 {
-    margin: 0;
+    margin: 0 0 -7px;
     height: 50px;
     align-self: flex-end;
     font-size: 2.5em;

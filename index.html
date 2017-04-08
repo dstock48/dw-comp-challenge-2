@@ -2,29 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="httwww.thefreshestfruit.com.com/css?family=Roboto+Slab:700|Roboto:300,400,500i" rel="stylesheet">
-
     <link rel="stylesheet" href="css/styles.css">
     <title>Comp Challenge 2</title>
   </head>
   <body>
     <header>
       <h1>FreshFruit</h1>
-      <a class="login" href="#">Login</a>
+      <a class="login" href="">Login</a>
       <nav>
-        <a class="nav-item fruit-stand" href="#">Fruit Stand</a>
-        <a class="nav-item assortment active" href="#">All Fruits</a>
-        <a class="nav-item juice" href="#">Juices</a>
+        <a class="nav-item fruit-stand" href="">Fruit Stand</a>
+        <a class="nav-item assortment active" href="">All Fruit</a>
+        <a class="nav-item juice" href="">Juices</a>
       </nav>
     </header>
     <main>
-      <h2>All Fruits</h2>
+      <h2>All Fruit</h2>
       <div class="card-container">
         <div class="card" id="apple">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="share-btn"></button>
+              <button class="fruit-icon"></button>
               <div class="views">
                 <p class="price-label">Price / lb</p>
                 <p class="price-ammount">$1.15</p>
@@ -36,16 +36,37 @@
             <p class="date">Fresh as of 04/10/17 8:45am</p>
             <p class="url">www.thefreshestfruit.com/apples</p>
             <h4 class="title-1">Origin</h4>
-            <p class="content-1">Deardorff Orchards - Minnesota</p>
+            <p class="content-1">Deardorff Orchards, Minnesota</p>
             <h4 class="title-2">Available</h4>
             <p class="content-2">52</p>
+          </div>
+        </div>
+
+        <div class="card" id="banana">
+          <div class="card-header">
+            <div class="card-header-items">
+              <button class="fruit-icon"></button>
+              <div class="views">
+                <p class="price-label">Price / lb</p>
+                <p class="price-ammount">$0.60</p>
+            </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="name">Bananas</h3>
+            <p class="date">Fresh as of 04/10/17 8:45am</p>
+            <p class="url">www.thefreshestfruit.com/bananas</p>
+            <h4 class="title-1">Origin</h4>
+            <p class="content-1">Ohana Banana Farm, Hawaii</p>
+            <h4 class="title-2">Available</h4>
+            <p class="content-2">84</p>
           </div>
         </div>
 
         <div class="card" id="blueberries">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="share-btn"></button>
+              <button class="fruit-icon"></button>
               <div class="views">
                 <p class="price-label">Price / lb</p>
                 <p class="price-ammount">$1.60</p>
@@ -57,7 +78,7 @@
             <p class="date">Fresh as of 04/10/17 8:45am</p>
             <p class="url">www.thefreshestfruit.com/blueberries</p>
             <h4 class="title-1">Origin</h4>
-            <p class="content-1">Rambo Blueberries - Michigan</p>
+            <p class="content-1">Rambo Blueberries, Michigan</p>
             <h4 class="title-2">Available</h4>
             <p class="content-2">72</p>
           </div>
@@ -66,7 +87,7 @@
         <div class="card" id="grapes">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="share-btn"></button>
+              <button class="fruit-icon"></button>
               <div class="views">
                 <p class="price-label">price / lb</p>
                 <p class="price-ammount">$3.00</p>
@@ -80,14 +101,14 @@
             <h4 class="title-1">Origin</h4>
             <p class="content-1">Beringer Vineyards, California</p>
             <h4 class="title-2">Available</h4>
-            <p class="content-2">55</p>
+            <p class="content-2">56</p>
           </div>
         </div>
 
         <div class="card" id="pear">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="share-btn"></button>
+              <button class="fruit-icon"></button>
               <div class="views">
                 <p class="price-label">Price / lb</p>
                 <p class="price-ammount">$1.75</p>
@@ -108,7 +129,7 @@
         <div class="card"id="pineapple">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="share-btn"></button>
+              <button class="fruit-icon"></button>
               <div class="views">
                 <p class="price-label">Price / lb</p>
                 <p class="price-ammount">$0.75</p>
@@ -130,7 +151,7 @@
 
           <div class="card-header">
             <div class="card-header-items">
-              <button class="share-btn"></button>
+              <button class="fruit-icon"></button>
               <div class="views">
                 <p class="price-label">price / lb</p>
                 <p class="price-ammount">$4.80</p>
@@ -152,7 +173,7 @@
         <div class="card" id="strawberry">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="share-btn"></button>
+              <button class="fruit-icon"></button>
               <div class="views">
                 <p class="price-label">Price / lb</p>
                 <p class="price-ammount">$2.00</p>
@@ -166,7 +187,7 @@
             <h4 class="title-1">Origin</h4>
             <p class="content-1">Kenny's Strawberry Farm, California</p>
             <h4 class="title-2">Available</h4>
-            <p class="content-2">30</p>
+            <p class="content-2">39</p>
           </div>
         </div>
       </div>
