@@ -14,6 +14,7 @@ body {
   width: 100%;
   margin: 0;
   font-family: Roboto, sans-serif;
+  background-color: #EFEFEF;
 }
 
 
@@ -37,7 +38,7 @@ h1 {
   font-family: 'Roboto Slab', serif;
   color: #fff;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3em;
   margin: 0 0 20px;
 }
 
@@ -45,15 +46,16 @@ h1 {
   background-image: url(../assets/user.svg);
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: 15px;
+  background-size: 20px;
   background-position: 10px 50%;
-  color: #27A0DE;
+  color: #C62A6A;
   text-decoration: none;
-  padding: .5em;
-  padding-bottom: 0.3em;
+  padding-top: 2px;
   padding-left: 40px;
   transition: all 200ms;
   margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .login:hover {
   color: #fff;
@@ -63,9 +65,11 @@ h1 {
 nav {
   display: flex;
   flex-direction: column;
+  width: 10em;
 }
 
 .nav-item {
+  display: inline-block;
   color: #969696;
   text-decoration: none;
   padding: .5em;
@@ -73,42 +77,48 @@ nav {
   padding-left: 40px;
   transition: all 200ms;
   text-transform: uppercase;
+  margin: 10px 0;
+  letter-spacing: 1px;
 }
-.nav-item:hover {
-  color: white;
-}
-
-.shares {
-  background-image: url(../assets/nav-share.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-size: 15px;
-  background-position: 10px 50%;
-}
-.shares:hover{
-  background-image: url(../assets/nav-share-active.svg);
+.nav-item:hover,
+.nav-item.active {
+  color: #fff;
 }
 
-.playlist{
-  background-image: url(../assets/list.svg);
+.fruit-stand {
+  background-image: url(../assets/fruit-stand.svg);
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: 15px;
+  background-size: 20px;
   background-position: 10px 50%;
 }
-.playlist:hover {
-  background-image: url(../assets/list-active.svg);
+.fruit-stand:hover,
+.fruit-stand.active {
+  background-image: url(../assets/fruit-stand-active.svg);
 }
 
-.videos {
-  background-image: url(../assets/video.svg);
+.assortment{
+  background-image: url(../assets/fruit-basket.svg);
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: 15px;
+  background-size: 20px;
   background-position: 10px 50%;
 }
-.videos:hover {
-  background-image: url(../assets/video-active.svg);
+.assortment:hover,
+.assortment.active {
+  background-image: url(../assets/fruit-basket-active.svg);
+}
+
+.juice {
+  background-image: url(../assets/juice.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 20px;
+  background-position: 10px 50%;
+}
+.juice:hover,
+.juice.active {
+  background-image: url(../assets/juice-active.svg);
 }
 
 /*=======================================
@@ -116,35 +126,83 @@ nav {
 ========================================*/
 
 main {
-  background-color: #EFEFEF;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
   margin-bottom: 20px;;
   font-weight: 400;
   color: #4B4B4B;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
 }
 
 /*=======================================
       >>>>>>>>  CARDS  <<<<<<<<
 ========================================*/
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   background-color: #fff;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, .5);
-  border-radius: 5px;
-  margin: 20px auto;
+  margin-bottom: 20px;
+  width: 300px;
 }
+
+#apple .share-btn {background-image: url(../assets/apple.svg);}
+#apple .card-header {background-image: url(../assets/card-backgrounds/apples-bg.jpg);}
+#apple .content-2 {color: #D13834;}
+
+#blueberries .share-btn {background-image: url(../assets/blueberries.svg);}
+#blueberries .card-header {background-image: url(../assets/card-backgrounds/blueberries-bg.jpg);}
+#blueberries .content-2 {color: #1A49C1;}
+
+#grapes .share-btn {background-image: url(../assets/grapes.svg);}
+#grapes .card-header {background-image: url(../assets/card-backgrounds/grapes-bg.jpg);}
+#grapes .content-2 {color: #6F58A8;}
+
+#pear .share-btn {background-image: url(../assets/pear.svg);}
+#pear .card-header {background-image: url(../assets/card-backgrounds/pears-bg.jpg);}
+#pear .content-2 {color: #D7CC56;}
+
+#pineapple .share-btn {background-image: url(../assets/pineapple.svg);}
+#pineapple .card-header {background-image: url(../assets/card-backgrounds/pineapples-bg.jpg);}
+#pineapple .content-2 {color: #D6A550;}
+
+#raspberry .share-btn {background-image: url(../assets/raspberry.svg);}
+#raspberry .card-header {background-image: url(../assets/card-backgrounds/raspberries-bg.jpg);}
+#raspberry .content-2 {color: #C62A6A;}
+
+#strawberry .share-btn {background-image: url(../assets/strawberry.svg);}
+#strawberry .card-header {background-image: url(../assets/card-backgrounds/strawberries-bg.jpg);}
+#strawberry .content-2 {color: #E22F37;}
+
 
 .card-header {
   min-height: 140px;
-  background-color: #747879;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/1b/b8/2a/1bb82a1ac944d573422bd2d137edbcdd.jpg);
+  background-color: #5a5a5a;
+  background-size: cover;
+  background-blend-mode: multiply;
   color: #fff;
   padding: 15px;
-  border-radius: 5px 5px 0 0;
+  transition: background-color 200ms;
+}
+.card-header:hover {
+  background-color: #bfbfbf;
+  cursor: pointer;
 }
 
 .card-header-items {
@@ -157,29 +215,29 @@ h2 {
 .share-btn {
   width: 50px;
   height: 50px;
-  background-image: url(../assets/card-share.svg);
   background-color: transparent;
   border: none;
   padding: 0;
   transition: all 200ms;
 }
 .share-btn:hover {
-  background-image: url(../assets/card-share-active.svg);
   cursor: pointer;
 }
+
 
 .views {
   text-align: center;
 }
 
-.views-label {
+.price-label {
   text-transform: uppercase;
   font-size: .7em;
   font-weight: 300;
   letter-spacing: 1px;
+  text-align: right;
 }
 
-.views-ammount {
+.price-ammount {
   font-size: 2em;
   font-weight: 300;
 }
@@ -193,6 +251,9 @@ h2 {
 .name {
   font-size: 1.2em;
   margin-bottom: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .date {
@@ -204,10 +265,20 @@ h2 {
   margin: 20px auto;
   text-align: center;
   background-color: #EFEFEF;
-  color: #989898;
+  color: #888;
   padding: 10px;
   border-radius: 5px;
   font-size: .8em;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 2px solid transparent;
+  transition: border 250ms;
+}
+.url:hover {
+  border: 2px solid #969696;   /*<ACCENT COLOR*/
+  color: #595959;
+  cursor: pointer;
 }
 
 .title-1 {
@@ -216,8 +287,8 @@ h2 {
   margin:20px auto 2px;
 }
 
-.playlist-name {
-
+.content-1 {
+  font-weight: 300;
 }
 
 .title-2 {
@@ -226,39 +297,98 @@ h2 {
   margin:20px auto 2px;
 }
 
-.num-of-attachments {
+.content-2 {
   font-size: 2em;
-  color: #48BFFC;
-}
-
-/*=======================================
-       >>>>>>>>  FOOTER  <<<<<<<<
-========================================*/
-
-footer {
-  background-color: #2B2B2B;
-  color: #969696;
-  text-align: center;
-  padding: 30px;
-}
-
-footer p {
-  padding: 5px;
+  color: #efdd00; /*<ACCENT COLOR*/
+  font-weight: 300;
 }
 
 /*=======================================
     >>>>>>>>  MEDIA QUERIES  <<<<<<<<
 ========================================*/
 
-/*Over 450px width*/
-@media screen and (min-width: 450px) {
+/*Over 490px width*/
+@media screen and (min-width: 490px) {
+  header {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
+  }
+
+  h1 {
+    margin: 0 0 20px;
+    height: 50px;
+    font-size: 2.5em;
+  }
+
+  .login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    margin: 0;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
   .card-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .card {
-    flex: 0 1 280px;
-    /*margin: 20px;*/
+    margin: 10px;
+  }
+}
+
+
+
+/*Over 750px width*/
+@media screen and (min-width: 750px) {
+  header {
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 140px;
+  }
+
+  h1 {
+    margin: 0;
+    height: 50px;
+    align-self: flex-end;
+    font-size: 2.5em;
+  }
+
+  .login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 0;
+  }
+
+  nav {
+    align-self: flex-end;
   }
 }
