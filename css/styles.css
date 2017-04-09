@@ -22,6 +22,10 @@ h1, h2, h3, h4, p {
   font-weight: 400;
 }
 
+a:visited {
+  color: inherit;
+}
+
 /*=======================================
       >>>>>>>>  HEADER  <<<<<<<<
 ========================================*/
@@ -39,14 +43,21 @@ header {
 
 header a {
   text-decoration: none;
+  margin-right: 8px;
 }
 
 h1 {
   font-family: 'Carter One', serif;
   color: #fff;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   margin: 0 0 20px;
+}
+
+.logo {
+  height: 40px;
+  margin-left: -3px;
+  margin-bottom: -8px;
 }
 
 .login {
@@ -69,14 +80,31 @@ h1 {
   background-image: url("../assets/user-active.svg");
 }
 
+
+.login span {
+  display: inline-block;
+  margin-left: 1em;
+  width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #c62a6a;
+	font-size: 0;
+	line-height: 0;
+}
+.login span:hover {
+  cursor: pointer;
+  border-top-color: #fff;
+}
+
 nav {
   display: flex;
   flex-direction: column;
   width: 10em;
+  color: #969696;
 }
 
 .nav-item {
-  color: #969696;
   padding: 0.5em 0.5em 0.3em 30px;
   transition: all 200ms;
   text-transform: uppercase;
@@ -90,6 +118,9 @@ nav {
 .nav-item.active,
 .nav-item:hover {
   color: #fff;
+}
+.nav-item.active {
+  cursor: default;
 }
 
 .fruit-stand {
@@ -355,8 +386,14 @@ h2 {
     height: 30px;
     margin: 0;
     padding-left: 30px;
-    font-size: .7em;
+    font-size: .8em;
     width: auto;
+  }
+
+  .login span {
+  	border-left: 5px solid transparent;
+  	border-right: 5px solid transparent;
+  	border-top: 5px solid #c62a6a;
   }
 
   nav {
@@ -368,6 +405,7 @@ h2 {
 
   .nav-item {
     margin: 0;
+    background-size: 20px;
   }
 
   .nav-item:not(:last-child) {
