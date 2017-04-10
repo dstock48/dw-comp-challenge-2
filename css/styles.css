@@ -189,7 +189,6 @@ h2 {
   background-color: #fff;
   box-shadow: 0 0 7px rgba(0, 0, 0, .5);
   margin-bottom: 20px;
-  /*max-width: 350px;*/
   transition: box-shadow 200ms;
 }
 
@@ -239,7 +238,7 @@ h2 {
   cursor: pointer;
 }
 
-.views {
+.price {
   text-align: center;
 }
 
