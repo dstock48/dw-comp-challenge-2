@@ -4,6 +4,6 @@ $('.nav-item').on('click', function(e) {
   return false;
 })
 
-$('.login').on('click', function(e) {
+$('a').on('click', function(e) {
   return false;
 })
