@@ -11,9 +11,12 @@
 <body>
   <header>
     <div class="header-container">
-      <h1>FreshFruit <img class="logo"src="assets/logo.svg" alt=""></h1>
-      <span class="login"><a href="">Login</a><span class="down-arrow"></span></span>
-      <nav>
+      <a href="#" class="logo"><h1>FreshFruit</h1></a>
+      <a href="#" class="login">Login<span class="down-arrow"></span></a>
+      <nav class="mobile-nav">
+        <button class="mobile-nav-icon"></button>
+      </nav>
+      <nav class="std-nav">
         <a class="nav-item fruit-stand" href="#">Fruit Stand</a>
         <a class="nav-item assortment active" href="#">All Fruit</a>
         <a class="nav-item juice" href="#">Juices</a>
@@ -28,10 +31,10 @@
         <div class="card" id="apple">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="fruit-icon"></button>
+              <i class="fruit-icon"></i>
               <div class="price">
                 <p class="price-label">Price / lb</p>
-                <p class="price-ammount">$1.15</p>
+                <p class="price-amount">$1.15</p>
               </div>
             </div>
           </div>
@@ -39,9 +42,9 @@
             <h3 class="name">Apples</h3>
             <p class="date">Fresh as of 04/10/17 8:45am</p>
             <p class="url">www.thefreshestfruit.com/apples</p>
-            <h4 class="title-1">Origin</h4>
+            <p class="title-1">Origin</p>
             <p class="content-1">Deardorff Orchards, Minnesota</p>
-            <h4 class="title-2">Available</h4>
+            <p class="title-2">Available</p>
             <p class="content-2">52</p>
           </div>
         </div>
@@ -49,10 +52,10 @@
         <div class="card" id="banana">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="fruit-icon"></button>
+              <i class="fruit-icon"></i>
               <div class="price">
                 <p class="price-label">Price / lb</p>
-                <p class="price-ammount">$0.60</p>
+                <p class="price-amount">$0.60</p>
               </div>
             </div>
           </div>
@@ -60,9 +63,9 @@
             <h3 class="name">Bananas</h3>
             <p class="date">Fresh as of 04/10/17 8:45am</p>
             <p class="url">www.thefreshestfruit.com/bananas</p>
-            <h4 class="title-1">Origin</h4>
+            <p class="title-1">Origin</p>
             <p class="content-1">Ohana Banana Farm, Hawaii</p>
-            <h4 class="title-2">Available</h4>
+            <p class="title-2">Available</p>
             <p class="content-2">84</p>
           </div>
         </div>
@@ -70,10 +73,10 @@
         <div class="card" id="blueberries">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="fruit-icon"></button>
+              <i class="fruit-icon"></i>
               <div class="price">
                 <p class="price-label">Price / lb</p>
-                <p class="price-ammount">$1.60</p>
+                <p class="price-amount">$1.60</p>
               </div>
             </div>
           </div>
@@ -81,9 +84,9 @@
             <h3 class="name">Blueberries</h3>
             <p class="date">Fresh as of 04/10/17 8:45am</p>
             <p class="url">www.thefreshestfruit.com/blueberries</p>
-            <h4 class="title-1">Origin</h4>
+            <p class="title-1">Origin</p>
             <p class="content-1">Rambo Blueberries, Michigan</p>
-            <h4 class="title-2">Available</h4>
+            <p class="title-2">Available</p>
             <p class="content-2">72</p>
           </div>
         </div>
@@ -91,10 +94,10 @@
         <div class="card" id="grapes">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="fruit-icon"></button>
+              <i class="fruit-icon"></i>
               <div class="price">
                 <p class="price-label">price / lb</p>
-                <p class="price-ammount">$3.00</p>
+                <p class="price-amount">$3.00</p>
               </div>
             </div>
           </div>
@@ -102,9 +105,9 @@
             <h3 class="name">Grapes</h3>
             <p class="date">Fresh as of 04/10/17 8:45am</p>
             <p class="url">www.thefreshestfruit.com/grapes</p>
-            <h4 class="title-1">Origin</h4>
+            <p class="title-1">Origin</p>
             <p class="content-1">Beringer Vineyards, California</p>
-            <h4 class="title-2">Available</h4>
+            <p class="title-2">Available</p>
             <p class="content-2">56</p>
           </div>
         </div>
@@ -112,10 +115,10 @@
         <div class="card" id="pear">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="fruit-icon"></button>
+              <i class="fruit-icon"></i>
               <div class="price">
                 <p class="price-label">Price / lb</p>
-                <p class="price-ammount">$1.75</p>
+                <p class="price-amount">$1.75</p>
               </div>
             </div>
           </div>
@@ -123,9 +126,9 @@
             <h3 class="name">Pears</h3>
             <p class="date">Fresh as of 04/10/17 8:45am</p>
             <p class="url">www.thefreshestfruit.com/pears</p>
-            <h4 class="title-1">Origin</h4>
+            <p class="title-1">Origin</p>
             <p class="content-1">Gebbers Farms, Washington</p>
-            <h4 class="title-2">Available</h4>
+            <p class="title-2">Available</p>
             <p class="content-2">27</p>
           </div>
         </div>
@@ -133,10 +136,10 @@
         <div class="card"id="pineapple">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="fruit-icon"></button>
+              <i class="fruit-icon"></i>
               <div class="price">
                 <p class="price-label">Price / lb</p>
-                <p class="price-ammount">$0.75</p>
+                <p class="price-amount">$0.75</p>
               </div>
             </div>
           </div>
@@ -144,9 +147,9 @@
             <h3 class="name">Pineapples</h3>
             <p class="date">Fresh as of 04/10/17 8:45am</p>
             <p class="url">www.thefreshestfruit.com/pineapples</p>
-            <h4 class="title-1">Origin</h4>
+            <p class="title-1">Origin</p>
             <p class="content-1">Dole Plantation, Hawaii</p>
-            <h4 class="title-2">Available</h4>
+            <p class="title-2">Available</p>
             <p class="content-2">13</p>
           </div>
         </div>
@@ -154,10 +157,10 @@
         <div class="card" id="raspberry">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="fruit-icon"></button>
+              <i class="fruit-icon"></i>
               <div class="price">
                 <p class="price-label">price / lb</p>
-                <p class="price-ammount">$4.80</p>
+                <p class="price-amount">$4.80</p>
               </div>
             </div>
           </div>
@@ -165,9 +168,9 @@
             <h3 class="name">Raspberries</h3>
             <p class="date">Fresh as of 04/10/17 8:45am</p>
             <p class="url">www.thefreshestfruit.com/raspberries</p>
-            <h4 class="title-1">Origin</h4>
+            <p class="title-1">Origin</p>
             <p class="content-1">Frank Farms, Michigan</p>
-            <h4 class="title-2">Available</h4>
+            <p class="title-2">Available</p>
             <p class="content-2">23</p>
           </div>
         </div>
@@ -175,10 +178,10 @@
         <div class="card" id="strawberry">
           <div class="card-header">
             <div class="card-header-items">
-              <button class="fruit-icon"></button>
+              <i class="fruit-icon"></i>
               <div class="price">
                 <p class="price-label">Price / lb</p>
-                <p class="price-ammount">$2.00</p>
+                <p class="price-amount">$2.00</p>
               </div>
             </div>
           </div>
@@ -186,9 +189,9 @@
             <h3 class="name">Strawberries</h3>
             <p class="date">Fresh as of 04/10/17 8:45am</p>
             <p class="url">www.thefreshestfruit.com/strawberries</p>
-            <h4 class="title-1">Origin</h4>
+            <p class="title-1">Origin</p>
             <p class="content-1">Kenny's Strawberry Farm, California</p>
-            <h4 class="title-2">Available</h4>
+            <p class="title-2">Available</p>
             <p class="content-2">39</p>
           </div>
         </div>
