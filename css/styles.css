@@ -8,13 +8,16 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: #2B2B2B;
+}
+
 body,
 html {
   height: 100%;
   width: 100%;
   margin: 0;
   font-family: Roboto, sans-serif;
-  background-color: #2B2B2B;
   font-size: 16px;
 }
 
@@ -170,9 +173,10 @@ header a {
 
 main {
   display: flex;
+  min-height: 100%;
   padding: 0 20px 20px;
   box-shadow: 0px 10px 15px hsla(0,0%,0%,.71);
-  margin-bottom: 85px;
+  margin-bottom: 75px;
   flex-direction: column;
   align-items: center;
   background-color: #EFEFEF;
@@ -382,7 +386,7 @@ footer {
   background-color: #2B2B2B;
   color: #969696;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 10.5px;
   text-align: center;
   letter-spacing: 0.8px;
   position: fixed;
@@ -409,11 +413,6 @@ footer {
     height: 140px;
     padding-bottom: 25px;
     margin: auto;
-  }
-
-  h2 {
-    margin-left: 10px;
-    font-size: 30px;
   }
 
   .logo {
@@ -467,6 +466,15 @@ footer {
     margin-right: 20px;
   }
 
+  h2 {
+    margin-left: 10px;
+    font-size: 30px;
+  }
+
+  main {
+    margin-bottom: 85px;
+  }
+
   .card-container {
     display: flex;
     flex-direction: row;
@@ -477,6 +485,10 @@ footer {
   .card {
     margin: 10px;
     width: 290px;
+  }
+
+  footer {
+    font-size: 14px;
   }
 }
 
