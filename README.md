@@ -8,3 +8,4 @@ The goal of this project was to create a responsive webpage closely following th
 
 #### Final
 ![My Version](https://raw.githubusercontent.com/dstock48/dw-comp-challenge-2/master/screenshots/final.jpg)
+![dstock48 github io_dw-comp-challenge-2_](https://user-images.githubusercontent.com/20492875/30601352-fa26871c-9d1e-11e7-984f-0668698547a0.jpg)
